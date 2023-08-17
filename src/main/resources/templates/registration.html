@@ -24,16 +24,16 @@
         <div class="border border-secondary p-3 rounded">
             <p>Register</p>
             <p>
-                <input type="text" name="name" class="form-control" placeholder="Name" required autofocus/>
+                <input th:field="*{name}" type="text" name="name" class="form-control" placeholder="Name" required autofocus/>
             </p>
             <p>
-                <input type="email" name="email" class="form-control" placeholder="E-mail" required autofocus/>
+                <input th:field="*{email}" type="email" name="email" class="form-control" placeholder="E-mail" required autofocus/>
             </p>
             <p>
-                <input type="password" name="password" class="form-control" placeholder="Password" required />
+                <input th:field="*{password}" type="password" name="password" class="form-control" placeholder="Password" required />
             </p>
             <p>
-                <input type="submit" value="Login" class="btn btn-primary" />
+                <input type="submit" value="Register" class="btn btn-primary" />
             </p>
         </div>
     </form>

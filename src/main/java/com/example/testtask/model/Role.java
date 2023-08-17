@@ -2,5 +2,5 @@ package com.example.testtask.model;
 
 public enum Role
 {
-    USER,ADMIN
+    USER_ROLE,ADMIN_ROLE
 }
