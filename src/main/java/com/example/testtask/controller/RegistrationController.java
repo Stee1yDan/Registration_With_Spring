@@ -26,6 +26,7 @@ public class RegistrationController
     public String register(@ModelAttribute("user") @Valid User user, Model model)
     {
         userService.saveUser(user);
+        System.out.println(user);
         return "redirect:/login";
     }
 
